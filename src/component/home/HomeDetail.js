@@ -6,7 +6,7 @@ import {observable} from 'mobx'
 import { SafeAreaView } from 'react-navigation';
 import { Divider } from 'react-native-elements'
 import {inject,observer} from 'mobx-react'
-import {sty} from '../../config/styles'
+import {met} from '../../config/styles'
 
 class HomeDetail  extends Component{
    

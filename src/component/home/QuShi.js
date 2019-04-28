@@ -17,7 +17,7 @@ import LottieView from 'lottie-react-native';
 import Echarts from 'native-echarts'
 @inject(["homeStore"])
 @observer // 监听当前组件
-class Home extends  Component{
+class QuShi extends  Component{
     constructor(props){
         super(props)
         this.state={
@@ -51,7 +51,7 @@ class Home extends  Component{
              {/* one  */}
             
           <TouchableOpacity onPress={()=>{
-              this.props.navigation.navigate('Baoxiu')
+              
           }} style={{width:'90%',marginTop:met.h*.05}}>
            <LinearGradient colors={['#c0c0aa','#1cefff']} 
            style={{
@@ -68,7 +68,7 @@ class Home extends  Component{
          
           {/*  two */}
           <TouchableOpacity onPress={()=>{
-             this.props.navigation.navigate('ShouZhi')
+              
             }} style={{
             width:'90%',marginTop:met.h*.02,
             alignItems:'flex-end'
@@ -89,7 +89,7 @@ justifyContent:'center',
             </TouchableOpacity>
             {/*  three*/}
           <TouchableOpacity onPress={()=>{
-              this.props.navigation.navigate('Info')
+              
             }} style={{width:'90%',marginTop:met.h*.02,
           alignItems:'flex-start'
             }}>
@@ -107,7 +107,7 @@ justifyContent:'center',
             </TouchableOpacity>
             {/*  */}
           <TouchableOpacity onPress={()=>{
-              this.props.navigation.navigate('QuShi')
+              
             }} style={{width:'90%',marginTop:met.h*.02,
           alignItems:'flex-end'
             }}>
@@ -148,4 +148,4 @@ const styles=StyleSheet.create({
         backgroundColor: 'transparent',
       },
 })
-export default Home
+export default QuShi
